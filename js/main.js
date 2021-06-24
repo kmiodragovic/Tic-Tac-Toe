@@ -59,6 +59,7 @@ const winningConditions = [
 
 let gameState = ["", "", "", "", "", "", "", "", ""];
 
+
 function checkWinner() {
     console.log(gameState)
     for(let i = 0; i < fields.length; i++)  {
@@ -85,6 +86,7 @@ function checkWinner() {
     if (roundWon) {
         for(let i = 0; i < players.length; i++) {
             let player = players[i];
+            alert("You won!")
 
             if(currentSymbol === player.symbol) {
                 player.addPoint();
